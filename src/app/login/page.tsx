@@ -84,11 +84,16 @@ const LoginPage = () => {
                 width={50}
                 height={50}
                 alt="google logo"
+                onClick={()=>signIn("google",{
+                callbackUrl:"http://localhost:3000/dashboard"
+                })}
               />
             </button>
-            <button className="btn btn-circle" onClick={()=>signIn("github",{
+            <button className="btn btn-circle" 
+            onClick={()=>signIn("github",{
               callbackUrl:"http://localhost:3000/dashboard"
-            })}>
+            })}
+            >
               <Image
                 src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
                 width={35}
