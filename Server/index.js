@@ -25,7 +25,7 @@ async function run() {
     await client.connect();
     console.log("Connected to MongoDB");
 
-    const db = client.db("authentication");
+    const db = client.db("authentication-nextjs");
     const collection = db.collection("users");
 
     // User Registration
