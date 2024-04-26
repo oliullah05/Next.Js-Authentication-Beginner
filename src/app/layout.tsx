@@ -19,7 +19,7 @@ export default async function RootLayout({
   return (
     <html lang="en" data-theme="light">
       <body>
-        <Navbar session={session}/>
+      <Navbar session={session}/>
         <div className="min-h-screen w-[90%] mx-auto">{children}</div>
       </body>
     </html>

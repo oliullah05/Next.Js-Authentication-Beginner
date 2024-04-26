@@ -23,13 +23,13 @@ const router = useRouter()
   const onSubmit = async (data: FormValues) => {
     try {
       const res = await loginUser(data)
-      console.log(res);
       if (res.accessToken) {
         localStorage.setItem("accessToken",res.accessToken)
         alert(res.message)
         router.push("/")
       }
-    } catch (err: any) {
+    }
+     catch (err: any) {
       console.error(err.message);
       throw new Error(err.message);
     }

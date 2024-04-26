@@ -7,7 +7,7 @@ type TUserProps = {
     name?: string | null | undefined
     image?: string | null | undefined
     email?: string | null | undefined
-  }
+  } |null
 }
 const Navbar = ({ session }: { session: TUserProps | null }) => {
   return (
